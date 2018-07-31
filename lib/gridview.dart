@@ -44,11 +44,8 @@ class CountyGridView extends StatelessWidget {
   Widget build(BuildContext context) {
     return new GridView.count(
       primary: true,
-//      padding: const EdgeInsets.all(1.0),
       crossAxisCount: 2,
       childAspectRatio: 0.80,
-//      mainAxisSpacing: 1.0,
-//      crossAxisSpacing: 1.0,
       children: List.generate(country.length, (index) {
         return getStructuredGridCell(country[index]);
       }),

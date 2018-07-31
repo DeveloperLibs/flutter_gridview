@@ -17,20 +17,5 @@ List<Country> parseData(String responseBody) {
 
   List<Country> list =
       parsed.map<Country>((json) => new Country.fromJson(json)).toList();
-
-  List<Country> listFilterd = new List<Country>();
-
-
-  Set<Country> set = Set.from(list);
-  set.forEach((element) => filterList(element,listFilterd));
-
-
-  return listFilterd;
+  return list;
 }
-
-filterList(Country country, List<Country> listFiltered) {
-//  if(country.name.contains("Bel")){
-    listFiltered.add(country);
-//  }
-}
-

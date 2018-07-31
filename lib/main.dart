@@ -19,15 +19,15 @@ class MyApp extends StatelessWidget {
         primaryColorDark: const Color(0xFF167F67),
         accentColor: const Color(0xFFFFAD32),
       ),
-      home: new MyHomePage(title: appTitle),
+      home: new HomePage(title: appTitle),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class HomePage extends StatelessWidget {
   final String title;
 
-  MyHomePage({Key key, this.title}) : super(key: key);
+  HomePage({Key key, this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
